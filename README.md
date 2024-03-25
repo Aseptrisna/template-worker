@@ -29,16 +29,19 @@ Aplikasi ini dikembangkan menggunakan Node.js dan mengambil data dari antrian Ra
 ## Setup .env
 
 Pastikan untuk membuat file .env di dalam direktori aplikasi dan mengisi variabel lingkungan yang diperlukan. Berikut adalah contoh isi dari file .env:
-GUID=
-DATABASE=
 
-RMQ_HOST=
-RMQ_USER=
-RMQ_PASS=
-RMQ_PORT=
-RMQ_VHOST=
+# Variabel untuk koneksi ke RabbitMQ
+RMQ_HOST=localhost
+RMQ_USER=guest
+RMQ_PASS=guest
+RMQ_PORT=5672
+RMQ_VHOST=/
 
-QUE=
-QUEUE_NAME=
+# Nama antrian RabbitMQ
+QUE=my_queue
+
+# Variabel untuk koneksi ke MongoDB
+MONGODB_URI=mongodb://localhost:27017/my_database
+
 
 
