@@ -9,7 +9,7 @@ class Worker {
         process.env.QUE,
         async (msg) => {
           logger.info("Sensor data detected...");
-          controller.divide(channel, msg);
+          controller.processData(channel, msg);
         },
         {
           noAck: true,
